@@ -2,86 +2,125 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toppers Academy By Dheeraj Sir</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f3f5fa;
-      color: #17233f;
-    }
-    header {
-      background: #101d3a;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-      border-bottom: 5px solid #d6ad50;
-    }
-    header h1 { margin: 0 0 10px; font-size: 27px; }
-    header p { margin: 0; color: #f2d58c; }
-    main { max-width: 700px; margin: 25px auto; padding: 15px; }
-    .card {
-      background: white;
-      padding: 22px;
-      margin-bottom: 18px;
-      border-radius: 14px;
-      box-shadow: 0 3px 12px #00000012;
-    }
-    h2 { color: #182e5b; }
-    a.button {
-      display: inline-block;
-      background: #182e5b;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 22px;
-      background: #101d3a;
-      color: white;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toppers Academy By Dheeraj Sir</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f5fa;color:#17233f}
+header{background:#101d3a;color:white;text-align:center;padding:30px 12px;border-bottom:5px solid #d6ad50}
+header h1{margin:0;font-size:27px}
+header p{color:#f1d58a;margin:9px 0 0}
+main{max-width:650px;margin:22px auto;padding:14px}
+.intro{text-align:center;margin-bottom:20px}
+.menu{display:flex;align-items:center;gap:15px;background:white;padding:18px;margin:13px 0;border-radius:14px;text-decoration:none;color:#17233f;box-shadow:0 3px 12px #00000010;border:1px solid #e5e9f1}
+.menu:active{transform:scale(.98)}
+.symbol{font-size:29px;width:48px;text-align:center}
+.menu h2{font-size:17px;margin:0 0 6px}
+.menu p{font-size:13px;color:#667085;margin:0;line-height:1.5}
+.arrow{margin-left:auto;font-size:23px;color:#b58a2a}
+.page{display:none;background:white;padding:22px;border-radius:14px;line-height:1.7}
+.page:target{display:block}
+body:has(.page:target) .home{display:none}
+.back{display:inline-block;margin-bottom:15px;color:#17396c;text-decoration:none;font-weight:bold}
+footer{text-align:center;background:#101d3a;color:white;padding:20px;font-size:13px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>TOPPERS ACADEMY</h1>
-    <p>BY DHEERAJ SIR</p>
-    <p>सीखें • अभ्यास करें • सफलता पाएँ</p>
-  </header>
 
-  <main>
-    <section class="card">
-      <h2>🙏 हमारी अकादमी में आपका स्वागत है!</h2>
-      <p>विद्यार्थियों के लिए गुणवत्तापूर्ण शिक्षा और नियमित अभ्यास।</p>
-    </section>
+<header>
+  <h1>TOPPERS ACADEMY</h1>
+  <p>BY DHEERAJ SIR</p>
+  <p>सीखें • अभ्यास करें • सफलता पाएँ</p>
+</header>
 
-    <section class="card">
-      <h2>📚 कक्षा अनुसार अध्ययन</h2>
-      <p>कक्षा 5 से 10 तक के विद्यार्थियों के लिए अध्ययन सामग्री।</p>
-      <p>वर्कशीट, गणित के प्रश्न और अभ्यास टेस्ट जल्द यहाँ उपलब्ध होंगे।</p>
-    </section>
+<main>
+<section class="home">
+  <div class="intro">
+    <h2>आपका स्वागत है! 🙏</h2>
+    <p>अपनी जरूरत के अनुसार विकल्प चुनें।</p>
+  </div>
 
-    <section class="card">
-      <h2>📝 ऑनलाइन टेस्ट</h2>
-      <p>ऑनलाइन प्रश्न-पत्र और टेस्ट की सुविधा विकसित की जा रही है।</p>
-    </section>
+  <a class="menu" href="#parichay">
+    <span class="symbol">🏫</span>
+    <span><h2>1. अकादमी का परिचय</h2><p>हमारी अकादमी के बारे में जानें</p></span>
+    <span class="arrow">›</span>
+  </a>
 
-    <section class="card">
-      <h2>👨‍🏫 संपर्क</h2>
-      <p>Toppers Academy By Dheeraj Sir</p>
-      <p>अपनी कोचिंग की जानकारी यहाँ अपडेट की जा सकती है।</p>
-    </section>
-  </main>
+  <a class="menu" href="#homework">
+    <span class="symbol">📚</span>
+    <span><h2>2. TODAY HOMEWORK</h2><p>कक्षा 5 से 12 तक का तारीखवार होमवर्क</p></span>
+    <span class="arrow">›</span>
+  </a>
 
-  <footer>
-    © Toppers Academy By Dheeraj Sir
-  </footer>
+  <a class="menu" href="#test">
+    <span class="symbol">📝</span>
+    <span><h2>3. ONLINE TEST</h2><p>ऑनलाइन अभ्यास और टेस्ट</p></span>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="menu" href="#result">
+    <span class="symbol">🏆</span>
+    <span><h2>4. RESULT</h2><p>टेस्ट के परिणाम देखें</p></span>
+    <span class="arrow">›</span>
+  </a>
+
+  <a class="menu" href="#questions">
+    <span class="symbol">📖</span>
+    <span><h2>5. IMPORTANT QUESTIONS &amp; ANSWERS</h2><p>महत्त्वपूर्ण प्रश्न और उत्तर</p></span>
+    <span class="arrow">›</span>
+  </a>
+</section>
+
+<section id="parichay" class="page">
+  <a class="back" href="#">← मुख्य पेज</a>
+  <h2>🏫 अकादमी का परिचय</h2>
+  <h3>Toppers Academy By Dheeraj Sir</h3>
+  <p>हमारा उद्देश्य विद्यार्थियों को नियमित अभ्यास, गुणवत्तापूर्ण अध्ययन सामग्री और बेहतर शिक्षा उपलब्ध कराना है।</p>
+  <p>यहाँ कक्षा 5 से 12 तक के विद्यार्थियों के लिए शैक्षणिक सामग्री जोड़ी जाएगी।</p>
+</section>
+
+<section id="homework" class="page">
+  <a class="back" href="#">← मुख्य पेज</a>
+  <h2>📚 TODAY HOMEWORK</h2>
+  <p>अपनी कक्षा चुनें:</p>
+  <div id="classes"></div>
+  <div id="hwdetail"></div>
+</section>
+
+<section id="test" class="page">
+  <a class="back" href="#">← मुख्य पेज</a>
+  <h2>📝 ONLINE TEST</h2>
+  <p>ऑनलाइन टेस्ट की सुविधा जल्द जोड़ी जाएगी।</p>
+</section>
+
+<section id="result" class="page">
+  <a class="back" href="#">← मुख्य पेज</a>
+  <h2>🏆 RESULT</h2>
+  <p>विद्यार्थियों के टेस्ट परिणाम यहाँ उपलब्ध कराए जाएँगे।</p>
+</section>
+
+<section id="questions" class="page">
+  <a class="back" href="#">← मुख्य पेज</a>
+  <h2>📖 IMPORTANT QUESTIONS &amp; ANSWERS</h2>
+  <p>कक्षा 5 से 12 तक के महत्त्वपूर्ण प्रश्न और उत्तर यहाँ जोड़े जाएँगे।</p>
+</section>
+</main>
+
+<footer>© Toppers Academy By Dheeraj Sir</footer>
+
+<script>
+const classes=document.getElementById("classes");
+for(let i=5;i<=12;i++){
+  const b=document.createElement("button");
+  b.textContent="कक्षा "+i;
+  b.style="margin:5px;padding:12px 16px;border:0;border-radius:8px;background:#172f59;color:white;font-size:15px";
+  b.onclick=()=>{
+    document.getElementById("hwdetail").innerHTML=
+      "<hr><h3>कक्षा "+i+" का होमवर्क</h3><p>अभी इस कक्षा का होमवर्क अपलोड नहीं किया गया है।</p>";
+  };
+  classes.appendChild(b);
+}
+</script>
 </body>
 </html>
-
